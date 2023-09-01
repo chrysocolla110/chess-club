@@ -6,9 +6,9 @@ Sync physical chess to digital chess.
 
 This allows you to use a physical chess board (nothing special) and play online chess on [chess.com](https://chess.com). It does this using 4 parts:
  - A main server that syncs data between components
- - A automated version of Chrome that moves your pieces for you and obtains the current game state (eg. where all the pieces are)
- - A local voice recognition client to recognize where you moved your pieces on the physical board based on what you say (eg. bE3)
- - A front end client to display this information to yourself and viewers watching, if you're livestreaming. There are two parts to the front end: one for an overheard projector to display on top of your chess board (http://localhost:5173/) and the other to display the current game state to anyone watching online (http://localhost:5173/board). 
+ - An automated version of Chrome that moves your pieces for you and obtains the current game state (eg. where all the pieces are)
+ - A local voice recognition client to recognize where you moved your pieces on the physical board based on what you say (e.g. bE3)
+ - A front-end client to display this information to yourself and viewers watching, if you're livestreaming. There are two parts to the front end: one for an overhead projector to display on top of your chess board (http://localhost:5173/) and the other to display the current game state to anyone watching online (http://localhost:5173/board). 
 
 ## Setting up
 
@@ -22,7 +22,7 @@ PICOVOICE_ACCESS_KEY=YOUR_ACCESS_KEY
 
 `CHESS_USERNAME` and `CHESS_PASSWORD` are from your [chess.com](https://chess.com) account. You can leave `PORT` as-is, and `PICOVOICE_ACCESS_KEY` is your access key from https://picovoice.ai/.
 
-2. Run `npm install` to install required dependencies.
+2. Run `npm install` to install the required dependencies.
 
 ## Starting Everything
 
@@ -31,8 +31,8 @@ Run these commands in order:
 
 1. `npm run start:server` to start the server.
 2. `npm run start:wizard` to start the wizard, which creates a browser that observes the chess game, reports back the chess game state, and can interact with the chess game using information from the server (eg. when a physical piece is moved).
-3. `npm run start:voice` to start the voice client, which listens for keypresses from the numpad to start voice recording and recognition. This is used for telling the system where a piece was moved so the computer can move it online.
-4. `npm run start:frontend` to start the frontend display, which receives information from the server about the chess game state and displays graphics and animations based on the information (eg. flashes where to move opponent's pieces).
+3. `npm run start:voice` to start the voice client, which listens for key presses from the Numpad to start voice recording and recognition. This is used for telling the system where a piece was moved so the computer can move it online.
+4. `npm run start:frontend` to start the frontend display, which receives information from the server about the chess game state and displays graphics and animations based on the information (eg. flashes where to move the opponent's pieces).
 
 ### Numpad setup
 
@@ -50,6 +50,6 @@ All this was done in a week, so if it looks a little scrappy, it was! 😅
 
 [![Chess Club Setup](https://img.youtube.com/vi/UcF7Ya1CMQY/0.jpg)](https://www.youtube.com/watch?v=UcF7Ya1CMQY)
 
-Below, you can view my first livestream using this setup. While there were a couple bugs, it still worked pretty well (although it takes a while to complete a move!).
+Below, you can view my first live stream using this setup. While there were a couple of bugs, it still worked pretty well (although it takes a while to complete a move!).
 
 [![Chess Club Lviestream](https://img.youtube.com/vi/GuRKL34j9Vw/0.jpg)](https://youtu.be/GuRKL34j9Vw?t=339)
