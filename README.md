@@ -2,7 +2,6 @@
 
 Sync physical chess to digital chess.
 
-![image](https://github.com/chrysocolla110/chess-club/assets/8016617/246e862e-ad60-4b9a-827f-df04baabc944)
 
 This allows you to use a physical chess board (nothing special) and play online chess on [chess.com](https://chess.com). It does this using 4 parts:
  - A main server that syncs data between components
@@ -48,8 +47,3 @@ In the video below, I share my livestream setup using this software. I'm able to
 
 All this was done in a week, so if it looks a little scrappy, it was! 😅
 
-[![Chess Club Setup](https://img.youtube.com/vi/UcF7Ya1CMQY/0.jpg)](https://www.youtube.com/watch?v=UcF7Ya1CMQY)
-
-Below, you can view my first live stream using this setup. While there were a couple of bugs, it still worked pretty well (although it takes a while to complete a move!).
-
-[![Chess Club Lviestream](https://img.youtube.com/vi/GuRKL34j9Vw/0.jpg)](https://youtu.be/GuRKL34j9Vw?t=339)
